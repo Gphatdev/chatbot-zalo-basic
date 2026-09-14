@@ -1,0 +1,49 @@
+{
+  "name": "nknp-v3-studio",
+  "version": "3.0.0",
+  "description": "NKNP V3 — hệ thống Zalo Bot hợp nhất của NKNP STUDIO (nền hệ thống EMPHAT + kho lệnh NKNP)",
+  "private": true,
+  "type": "module",
+  "main": "zalo.js",
+  "scripts": {
+    "start": "node zalo.js",
+    "dev": "node --watch zalo.js",
+    "check": "node --check zalo.js"
+  },
+  "dependencies": {
+    "axios": "^1.19.0",
+    "better-sqlite3": "^12.2.0",
+    "canvas": "^3.2.3",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.1.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "figlet": "^1.11.4",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.4.0",
+    "fuse.js": "^7.4.2",
+    "get-video-info": "^1.0.0",
+    "image-size": "^2.0.2",
+    "jimp": "^1.6.1",
+    "jsqr": "^1.4.0",
+    "luxon": "^3.7.1",
+    "moment-timezone": "^0.6.0",
+    "node-cron": "^4.5.0",
+    "node-schedule": "^2.1.1",
+    "qrcode": "^1.5.4",
+    "semver": "^7.7.2",
+    "sharp": "^0.35.3",
+    "sql.js": "^1.14.2",
+    "string-similarity": "^4.0.4",
+    "yaml": "^2.8.0",
+    "youtube-search-api": "^2.0.1",
+    "zca-js": "latest",
+    "zca-mt": "^1.2.2",
+    "zod": "^3.23.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

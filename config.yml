@@ -1,0 +1,32 @@
+# ==============================================================================
+#  NKNP V3 — config.yml
+#  Cấu hình (dễ chỉnh sửa bằng tay) — song song với file .env
+#  (cấu hình "kiểu EMPHAT", có validate bằng zod). App/Config.js sẽ đọc và
+#  hợp nhất cả hai, ưu tiên .env cho các khoá trùng tên (BOT_NAME, BOT_PREFIX...).
+# ==============================================================================
+
+studio: "NKNP STUDIO"
+name_bot: "NKNP BOT"
+prefix: "."
+version: "3.0.0"
+
+# Danh sách UID admin / support (dùng cho các lệnh: role kiểm tra
+# qua global.config.admin_bot / support_bot). Điền UID Zalo thật vào đây,
+# hoặc dùng lệnh !id để lấy UID của một tài khoản.
+admin_bot:
+  - ""
+support_bot:
+  - ""
+
+allow_private_command: true   # cho phép nhận lệnh qua tin nhắn riêng (inbox)
+default_money: 0              # số dư mặc định khi 1 user mới được khởi tạo
+
+# Thông tin hiển thị trên banner khởi động (khung thông tin )
+social:
+  facebook: ""
+  zalo_oa: ""
+  website: ""
+
+# Cấu hình riêng cho các lệnh Free Fire (td.js/tdlg.js/autotd.js) — nếu cần
+freefire:
+  garena_region: "vn"

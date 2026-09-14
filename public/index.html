@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NKNP V3 — Dashboard</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.5;
+  }
+  h1 { font-size: 1.5rem; }
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+  }
+  .stat-label { font-size: 0.8rem; opacity: 0.7; }
+  .stat-value { font-size: 1.3rem; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eee; }
+  .status-dot {
+    display: inline-block;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #22c55e;
+    margin-right: 6px;
+  }
+  code { background: rgba(127,127,127,0.15); padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+  <h1><span class="status-dot"></span>NKNP V3 — Dashboard</h1>
+  <p style="opacity:0.7">Chỉ đọc. Không hiển thị session, cookie, hay bất kỳ thông tin đăng nhập nào.</p>
+
+  <div class="card">
+    <div class="grid" id="stats-grid">
+      <div><div class="stat-label">Tên bot</div><div class="stat-value" id="botName">—</div></div>
+      <div><div class="stat-label">Prefix</div><div class="stat-value" id="prefix">—</div></div>
+      <div><div class="stat-label">Uptime</div><div class="stat-value" id="uptime">—</div></div>
+      <div><div class="stat-label">Số lệnh</div><div class="stat-value" id="commandCount">—</div></div>
+      <div><div class="stat-label">Người dùng đã thấy</div><div class="stat-value" id="userCount">—</div></div>
+      <div><div class="stat-label">Nhóm đã thấy</div><div class="stat-value" id="groupCount">—</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:1.1rem;">Danh sách lệnh</h2>
+    <table>
+      <thead>
+        <tr><th>Lệnh</th><th>Nhóm</th><th>Role</th><th>Cooldown</th><th>Mô tả</th></tr>
+      </thead>
+      <tbody id="commands-body">
+        <tr><td colspan="5">Đang tải...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function formatUptime(ms) {
+      const s = Math.floor(ms / 1000);
+      const h = Math.floor(s / 3600);
+      const m = Math.floor((s % 3600) / 60);
+      const sec = s % 60;
+      return `${h}h ${m}m ${sec}s`;
+    }
+
+    async function refresh() {
+      try {
+        const [health, stats, commands] = await Promise.all([
+          fetch("/api/health").then((r) => r.json()),
+          fetch("/api/stats").then((r) => r.json()),
+          fetch("/api/commands").then((r) => r.json()),
+        ]);
+
+        document.getElementById("botName").textContent = stats.botName ?? "—";
+        document.getElementById("prefix").textContent = stats.prefix ?? "—";
+        document.getElementById("uptime").textContent = formatUptime(stats.uptimeMs ?? 0);
+        document.getElementById("commandCount").textContent = stats.commandCount ?? "—";
+        document.getElementById("userCount").textContent = stats.userCount ?? "—";
+        document.getElementById("groupCount").textContent = stats.groupCount ?? "—";
+
+        const tbody = document.getElementById("commands-body");
+        tbody.innerHTML = "";
+        for (const cmd of commands.commands || []) {
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td><code>${stats.prefix ?? ""}${cmd.name}</code></td>
+            <td>${cmd.group ?? ""}</td>
+            <td>${cmd.role ?? 0}</td>
+            <td>${cmd.cooldown ?? 0}s</td>
+            <td>${cmd.description ?? ""}</td>
+          `;
+          tbody.appendChild(tr);
+        }
+      } catch (err) {
+        console.error("Không tải được dữ liệu dashboard:", err);
+      }
+    }
+
+    refresh();
+    setInterval(refresh, 5000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,571 @@
+{
+    "vang": {
+        "bgUrl": "https://files.catbox.moe/rh2fjl.png",
+        "canvas": {
+            "width": 1920,
+            "height": 1080
+        },
+        "assets": {
+            "weaponSlot1": {
+                "x": 850,
+                "y": 530,
+                "w": 480,
+                "h": 230,
+                "rotate": 24
+            },
+            "weaponSlot2": {
+                "x": 1120,
+                "y": 525,
+                "w": 480,
+                "h": 230,
+                "rotate": 24
+            },
+            "skills": [
+                {
+                    "x": 965,
+                    "y": 820,
+                    "r": 70
+                },
+                {
+                    "x": 1135,
+                    "y": 820,
+                    "r": 70
+                },
+                {
+                    "x": 1300,
+                    "y": 820,
+                    "r": 70
+                },
+                {
+                    "x": 1465,
+                    "y": 820,
+                    "r": 70
+                }
+            ]
+        },
+        "textMap": {
+            "nickname": {
+                "x": 450,
+                "y": 870,
+                "size": 55,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "team": {
+                "x": 1311,
+                "y": 415,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "realName": {
+                "x": 1311,
+                "y": 260,
+                "size": 36,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "position": {
+                "x": 1311,
+                "y": 488,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "birthday": {
+                "x": 1311,
+                "y": 345,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "studio": {
+                "x": 960,
+                "y": 1045,
+                "size": 50,
+                "color": "#FFFFFF",
+                "align": "center",
+                "text": "HNHANN STUDIO",
+                "neon": false
+            }
+        }
+    },
+    "goku": {
+        "bgUrl": "https://files.catbox.moe/z9jk39.PNG",
+        "canvas": {
+            "width": 1920,
+            "height": 1080
+        },
+        "assets": {
+            "weaponSlot1": {
+                "x": 1243,
+                "y": 862,
+                "w": 400,
+                "h": 200,
+                "rotate": 24
+            },
+            "weaponSlot2": {
+                "x": 1422,
+                "y": 862,
+                "w": 400,
+                "h": 200,
+                "rotate": 24
+            },
+            "skills": [
+                {
+                    "x": 1040,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1167,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1294,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1421,
+                    "y": 749,
+                    "r": 60
+                }
+            ]
+        },
+        "textMap": {
+            "nickname": {
+                "x": 1363,
+                "y": 346,
+                "size": 43,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "realName": {
+                "x": 1220,
+                "y": 510,
+                "size": 36,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "team": {
+                "x": 1321,
+                "y": 397,
+                "size": 40,
+                "color": "#FFFFFF",
+                "align": "left",
+                "neon": false
+            },
+            "position": {
+                "x": 1220,
+                "y": 692,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "birthday": {
+                "x": 1220,
+                "y": 595,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "studio": {
+                "x": 620,
+                "y": 9000,
+                "size": 40,
+                "color": "#FFFFFF",
+                "align": "center",
+                "text": "HNHANN STUDIO",
+                "neon": false
+            }
+        }
+    },
+    "oscar": {
+        "bgUrl": "https://files.catbox.moe/chktup.PNG",
+        "canvas": {
+            "width": 1920,
+            "height": 1080
+        },
+        "assets": {
+            "weaponSlot1": {
+                "x": 1243,
+                "y": 862,
+                "w": 400,
+                "h": 200,
+                "rotate": 24
+            },
+            "weaponSlot2": {
+                "x": 1422,
+                "y": 862,
+                "w": 400,
+                "h": 200,
+                "rotate": 24
+            },
+            "skills": [
+                {
+                    "x": 1040,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1167,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1294,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1421,
+                    "y": 749,
+                    "r": 60
+                }
+            ]
+        },
+        "textMap": {
+            "nickname": {
+                "x": 1363,
+                "y": 330,
+                "size": 43,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "realName": {
+                "x": 1220,
+                "y": 510,
+                "size": 36,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "team": {
+                "x": 1321,
+                "y": 413,
+                "size": 40,
+                "color": "#FFFFFF",
+                "align": "left",
+                "neon": false
+            },
+            "position": {
+                "x": 1220,
+                "y": 687,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "birthday": {
+                "x": 1220,
+                "y": 595,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "studio": {
+                "x": 620,
+                "y": 1058,
+                "size": 40,
+                "color": "#FFFFFF",
+                "align": "center",
+                "text": "HNHANN STUDIO",
+                "neon": false
+            }
+        }
+    },
+    "nagi": {
+        "bgUrl": "https://files.catbox.moe/5ye08r.png",
+        "canvas": {
+            "width": 1920,
+            "height": 1080
+        },
+        "assets": {
+            "weaponSlot1": {
+                "x": 1243,
+                "y": 862,
+                "w": 400,
+                "h": 200,
+                "rotate": 24
+            },
+            "weaponSlot2": {
+                "x": 1422,
+                "y": 862,
+                "w": 400,
+                "h": 200,
+                "rotate": 24
+            },
+            "skills": [
+                {
+                    "x": 1040,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1167,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1294,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1421,
+                    "y": 749,
+                    "r": 60
+                }
+            ]
+        },
+        "textMap": {
+            "nickname": {
+                "x": 1363,
+                "y": 330,
+                "size": 43,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "realName": {
+                "x": 1220,
+                "y": 510,
+                "size": 36,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "team": {
+                "x": 1321,
+                "y": 413,
+                "size": 40,
+                "color": "#FFFFFF",
+                "align": "left",
+                "neon": false
+            },
+            "position": {
+                "x": 1220,
+                "y": 687,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "birthday": {
+                "x": 1220,
+                "y": 595,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "studio": {
+                "x": 620,
+                "y": 1058,
+                "size": 40,
+                "color": "#FFFFFF",
+                "align": "center",
+                "text": "HNHANN STUDIO",
+                "neon": false
+            }
+        }
+    },
+    "itachi": {
+        "bgUrl": "https://files.catbox.moe/2ifzc4.PNG",
+        "canvas": {
+            "width": 1920,
+            "height": 1080
+        },
+        "assets": {
+            "weaponSlot1": {
+                "x": 1243,
+                "y": 862,
+                "w": 400,
+                "h": 200,
+                "rotate": 24
+            },
+            "weaponSlot2": {
+                "x": 1422,
+                "y": 862,
+                "w": 400,
+                "h": 200,
+                "rotate": 24
+            },
+            "skills": [
+                {
+                    "x": 1040,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1167,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1294,
+                    "y": 749,
+                    "r": 60
+                },
+                {
+                    "x": 1421,
+                    "y": 749,
+                    "r": 60
+                }
+            ]
+        },
+        "textMap": {
+            "nickname": {
+                "x": 1363,
+                "y": 330,
+                "size": 43,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "realName": {
+                "x": 1220,
+                "y": 510,
+                "size": 36,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "team": {
+                "x": 1321,
+                "y": 413,
+                "size": 40,
+                "color": "#FFFFFF",
+                "align": "left",
+                "neon": false
+            },
+            "position": {
+                "x": 1220,
+                "y": 687,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "birthday": {
+                "x": 1220,
+                "y": 595,
+                "size": 42,
+                "color": "#FFFFFF",
+                "align": "center",
+                "neon": false
+            },
+            "studio": {
+                "x": 620,
+                "y": 1058,
+                "size": 40,
+                "color": "#FFFFFF",
+                "align": "center",
+                "text": "HNHANN STUDIO",
+                "neon": false
+            }
+        }
+    },
+    "layout06": {
+        "bgUrl": "https://files.catbox.moe/wlrvqs.png",
+        "canvas": {
+            "width": 1920,
+            "height": 1080
+        },
+        "assets": {
+            "weaponSlot1": {
+                "x": 1260,
+                "y": 290,
+                "w": 550,
+                "h": 220,
+                "rotate": 0
+            },
+            "skills": [
+                {
+                    "x": 1480,
+                    "y": 840,
+                    "r": 80
+                },
+                {
+                    "x": 1550,
+                    "y": 550,
+                    "r": 140
+                },
+                {
+                    "x": 1300,
+                    "y": 840,
+                    "r": 80
+                },
+                {
+                    "x": 1630,
+                    "y": 840,
+                    "r": 80
+                }
+            ]
+        },
+        "textMap": {
+            "team": {
+                "x": 230,
+                "y": 360,
+                "size": 40,
+                "color": "#FFFFFF",
+                "align": "left",
+                "neon": false
+            },
+            "birthday": {
+                "x": 130,
+                "y": 540,
+                "size": 55,
+                "color": "#F0CF91",
+                "align": "left",
+                "neon": false
+            },
+            "nickname": {
+                "x": 130,
+                "y": 750,
+                "size": 55,
+                "color": "#F0CF91",
+                "align": "left",
+                "neon": false
+            },
+            "position": {
+                "x": 130,
+                "y": 950,
+                "size": 55,
+                "color": "#F0CF91",
+                "align": "left",
+                "neon": false
+            },
+            "realName": {
+                "x": -100,
+                "y": -100,
+                "size": 1,
+                "color": "#FFF",
+                "align": "center",
+                "neon": false
+            },
+            "studio": {
+                "x": 960,
+                "y": 70,
+                "size": 30,
+                "color": "#FFFFFF",
+                "align": "center",
+                "text": "HNHANN STUDIO",
+                "neon": false
+            }
+        }
+    }
+}
