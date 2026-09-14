@@ -1,13 +1,13 @@
 <div align="center">
 
-# 🤖 NKNP V3 — NKNP STUDIO
+# 🤖 Chatbot-zalo-basic — HNNP STUDIO
 
 ### Hệ thống Zalo Bot hợp nhất — nền hệ thống mạnh + kho lệnh phong phú
 
 Bot Zalo thời gian thực, hợp nhất từ 2 framework:
 **nền hệ thống** (đăng nhập QR, auto-reconnect, database, rental-guard, dashboard)
 **+ kho lệnh phong phú** (Free Fire, banking, key, mini-game, media...)
-thành một hệ thống duy nhất, thương hiệu **NKNP STUDIO**.
+thành một hệ thống duy nhất, thương hiệu **HNNP STUDIO**.
 
 ![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Module](https://img.shields.io/badge/Module-ESM-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -21,7 +21,7 @@ thành một hệ thống duy nhất, thương hiệu **NKNP STUDIO**.
 ## 📑 Mục lục
 
 * [Giới thiệu](#-giới-thiệu)
-* [NKNP V3 được ghép từ đâu?](#-nknp-v3-được-ghép-từ-đâu)
+* [Chatbot-zalo-basic được ghép từ đâu?](#-nknp-v3-được-ghép-từ-đâu)
 * [Tính năng](#-tính-năng)
 * [Yêu cầu hệ thống](#-yêu-cầu-hệ-thống)
 * [Cài đặt](#-cài-đặt)
@@ -38,16 +38,16 @@ thành một hệ thống duy nhất, thương hiệu **NKNP STUDIO**.
 
 ## 📖 Giới thiệu
 
-**NKNP V3** là bản hợp nhất của 2 dự án bot Zalo mà bạn cung cấp:
+**Chatbot-zalo-basic** là bản hợp nhất của 2 dự án bot Zalo mà bạn cung cấp:
 
 | Nguồn | Ưu thế được giữ lại |
 |---|---|
 | **EMPHAT (BOT-ZALO)** | Hệ thống lõi: đăng nhập QR + lưu session, auto-reconnect, database (sql.js), `CommandLoader`/`CommandRouter`, rental-guard (chặn box hết hạn thuê), unknown-command guard, dashboard web, banner khởi động |
 | **NKNP (botzalo2026)** | Kho ~50 lệnh phong phú: chấm điểm Free Fire (`td`, `tdlg`, `autotd`), hệ thống ngân hàng/nạp lượt (`luotdung`, `napluot`, `stk`, `tt`), hệ thống key (`key`), mini-game (`taixiu`), tiện ích media (`autodown`, `girltt`, `vdgirl`), quản trị nhóm (`kickall`, `capnhom`, `admin`)... |
 
-Kết quả: **nền hệ thống của EMPHAT được giữ nguyên 100%**, còn **~44 lệnh riêng biệt của NKNP được chuyển đổi và ghép vào**, chạy chung một bot, một database, một dashboard, một banner khởi động — tất cả mang tên **NKNP STUDIO**.
+Kết quả: **nền hệ thống của EMPHAT được giữ nguyên 100%**, còn **~44 lệnh riêng biệt của NKNP được chuyển đổi và ghép vào**, chạy chung một bot, một database, một dashboard, một banner khởi động — tất cả mang tên **HNNP STUDIO**.
 
-## 🧩 NKNP V3 được ghép từ đâu?
+## 🧩 Chatbot-zalo-basic được ghép từ đâu?
 
 Vì 2 dự án viết theo 2 kiểu code khác nhau (EMPHAT dùng ESM + `export default {...}`, NKNP dùng CommonJS + `module.exports.config/run`), việc ghép **không phải** là copy–paste thủ công từng dòng, mà dùng một **lớp cầu nối (Legacy Bridge)**:
 
@@ -94,7 +94,7 @@ npm install
 
 ## ⚙️ Cấu hình
 
-NKNP V3 đọc cấu hình từ **2 nguồn**, hợp nhất tại `App/Config.js`:
+Chatbot-zalo-basic đọc cấu hình từ **2 nguồn**, hợp nhất tại `App/Config.js`:
 
 1. **`.env`** (bắt buộc, có validate) — copy từ `.env.example`:
    ```bash
@@ -185,5 +185,5 @@ Dành cho bạn (hoặc dev khác) muốn thêm/sửa lệnh sau này:
 
 ## 👤 Tác giả / Credit
 
-**NKNP STUDIO** (Phát) — hợp nhất và vận hành.
+**HNNP STUDIO** (Phát) — hợp nhất và vận hành.
 Nền hệ thống kế thừa từ **EMPHAT STUDIO (BOT-ZALO)**. Kho lệnh kế thừa từ dự án **NKNP (botzalo2026)**, credit gốc: ShinTHL09, GwenDev và các tác giả lệnh liên quan (giữ nguyên trong `author` của từng lệnh port).
